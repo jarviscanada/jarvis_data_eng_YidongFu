@@ -8,7 +8,7 @@ usage=$1
 db_username=$2
 db_password=$3
 
-sudo centos
+su centos
 
 systemctl status docker || systemctl start docker
 
