@@ -22,3 +22,5 @@ insert_stmt="INSERT INTO host_usage ("timestamp", memory_free, cpu_idle, cpu_ker
 VALUES ('$timestamp','$memory_free', '$cpu_idle', '$cpu_kernel', '$disk_io','$disk_available');"
 
 export PGPASSWORD='password'; psql -h localhost -U postgres -d host_agent -c "$insert_stmt"
+
+exit $?

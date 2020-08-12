@@ -1,15 +1,5 @@
 --Question 1
-
-CREATE TABLE hardware_info(
-cpu_number INT NOT NULL,
-host_id INT NOT NULL,
-total_mem INT NOT NULL
-);
-
-INSERT INTO hardware_info(cpu_number, host_id, total_mem)
-VALUES (1,5,1568), (2,4,4088), (1,1,2048), (1,9,1024),(2,6,1024);
-
-SELECT * FROM hardware_info  ORDER BY cpu_number, total_mem DESC;
+SELECT cpu_number, host_id, total_mem  FROM host_info ORDER BY cpu_number, total_mem DESC;
 
 --Question 2
 --Insert some Sample Data
