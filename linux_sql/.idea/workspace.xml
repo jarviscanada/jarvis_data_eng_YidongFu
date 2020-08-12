@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d73a0f1-49a3-4758-8e63-9d31e1fa89dc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ff8BLDVUtyUK4SpLrJJNSKAgq0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="queries.sql" type="OdpsQLRunnerConfigurationType" factoryName="MaxCompute SQL">
+      <odps_target_file>$PROJECT_DIR$/sql/queries.sql</odps_target_file>
+      <odps_output_dir>/tmp</odps_output_dir>
+      <job_name />
+      <odps_parameter name="odps.compiler.runmode" value="Studio" />
+      <odps_parameter name="odps.sql.type.system.odps2" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d73a0f1-49a3-4758-8e63-9d31e1fa89dc" name="Default Changelist" comment="" />
+      <created>1596597649905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596597649905</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="591" y="212" width="738" height="653" key="#Inspections" timestamp="1596830255936">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="591" y="212" width="738" height="653" key="#Inspections/0.31.1920.1000@0.31.1920.1000" timestamp="1596830255936" />
+    <state x="522" y="303" width="875" height="472" key="#Notifications" timestamp="1596831993927">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="522" y="303" width="875" height="472" key="#Notifications/0.31.1920.1000@0.31.1920.1000" timestamp="1596831993927" />
+    <state x="634" y="136" width="648" height="795" key="#Shell_Script" timestamp="1596645487508">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="634" y="136" width="648" height="795" key="#Shell_Script/0.31.1920.1000@0.31.1920.1000" timestamp="1596645487508" />
+    <state x="145" y="191" width="1592" height="805" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596932750739">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="145" y="191" width="1592" height="805" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596932750739" />
+    <state x="619" y="61" width="677" height="944" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1596932740212">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="619" y="61" width="677" height="944" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596932740212" />
+    <state x="706" y="421" width="507" height="308" key="DBNavigator.ConnectionAuthenticationDialog" timestamp="1596826114994">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="706" y="421" width="507" height="308" key="DBNavigator.ConnectionAuthenticationDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596826114994" />
+    <state x="541" y="311" key="DBNavigator.ConnectionInfoDialog" timestamp="1596827242305">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="541" y="311" key="DBNavigator.ConnectionInfoDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596827242305" />
+    <state x="695" y="474" width="530" height="176" key="DBNavigator.CreateRenameSessionDialog" timestamp="1596827347198">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="695" y="474" width="530" height="176" key="DBNavigator.CreateRenameSessionDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596827347198" />
+    <state x="625" y="308" width="670" height="461" key="DBNavigator.PendingTransactionsDialog" timestamp="1596828418983">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="625" y="308" width="670" height="461" key="DBNavigator.PendingTransactionsDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596828418983" />
+    <state x="495" y="216" width="930" height="691" key="DBNavigator.ProjectSettingsDialog" timestamp="1596827262008">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="495" y="216" width="930" height="691" key="DBNavigator.ProjectSettingsDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596827262008" />
+    <state x="586" y="340" key="FileChooserDialogImpl" timestamp="1596830476636">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="586" y="340" key="FileChooserDialogImpl/0.31.1920.1000@0.31.1920.1000" timestamp="1596830476636" />
+    <state x="0" y="31" width="1920" height="1000" key="SettingsEditor" timestamp="1596932690156">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="0" y="31" width="1920" height="1000" key="SettingsEditor/0.31.1920.1000@0.31.1920.1000" timestamp="1596932690156" />
+    <state x="104" y="160" width="1716" height="756" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596830256311">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="104" y="160" width="1716" height="756" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596830256311" />
+    <state x="574" y="222" width="768" height="623" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597078081936">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="574" y="222" width="768" height="623" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1000@0.31.1920.1000" timestamp="1597078081936" />
+    <state x="478" y="100" width="960" height="866" key="git4idea.branch.GitSmartOperationDialog" timestamp="1596645560415">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="478" y="100" width="960" height="866" key="git4idea.branch.GitSmartOperationDialog/0.31.1920.1000@0.31.1920.1000" timestamp="1596645560415" />
+    <state x="504" y="246" width="910" height="687" key="search.everywhere.popup" timestamp="1597099203689">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state x="504" y="246" width="910" height="687" key="search.everywhere.popup/0.31.1920.1000@0.31.1920.1000" timestamp="1597099203689" />
+  </component>
+</project>
