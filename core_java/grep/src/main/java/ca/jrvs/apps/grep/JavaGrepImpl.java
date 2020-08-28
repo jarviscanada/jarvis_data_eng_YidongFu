@@ -26,11 +26,12 @@ public class JavaGrepImpl implements JavaGrep {
 
         for (File file : listFiles(rootPath)) {
             for (String line : readLines(file)) {
-                if (containsPattern(regex)) {
-                    matchedLines.add(regex);
+                if (containsPattern(line)) {
+                    matchedLines.add(line);
                 }
             }
         }
+
         if (!matchedLines.isEmpty()){
             writeToFile(matchedLines);
         } else {
@@ -59,7 +60,7 @@ public class JavaGrepImpl implements JavaGrep {
         if (inputFile == null) {
             throw new IllegalArgumentException(inputFile +  " is null");
         }
-        if (!inputFile.isFile()){
+        else if (!inputFile.isFile()){
             throw new IllegalArgumentException(inputFile + " is not a file");
         } else {
             return Files.readAllLines(inputFile.toPath());
@@ -68,8 +69,11 @@ public class JavaGrepImpl implements JavaGrep {
 
     @Override
     public boolean containsPattern(String line) {
-        if (line.contains(regex)){ return true; }
-        else { return false; }
+        if (line.matches(regex)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
