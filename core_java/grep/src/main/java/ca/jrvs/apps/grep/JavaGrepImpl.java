@@ -3,6 +3,7 @@ package ca.jrvs.apps.grep;
 import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -34,9 +35,7 @@ public class JavaGrepImpl implements JavaGrep {
 
         if (!matchedLines.isEmpty()){
             writeToFile(matchedLines);
-        } else {
-            throw new IOException();
-        }
+        } else throw new IOException();
     }
 
     @Override
