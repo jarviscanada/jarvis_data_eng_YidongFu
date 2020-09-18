@@ -21,7 +21,8 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     private static final String API_BASE_URI = "https://api.twitter.com";
     private static final String POST_PATH = "/1.1/statuses/update.json";
     private static final String SHOW_PATH = "/1.1/statuses/show.json";
-    private static final String DELETE_PATH = "/1.1/statuses/destroy";
+    private static final String DELETE_PATH = "/1.1/statuses/destroy/";
+    private static final String USER_PATH = "/1.1/statuses/user_timeline.json";
     //URI symbols
     private static final String QUERY_SYM = "?";
     private static final String AMPERSAND = "&";
@@ -98,8 +99,23 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @return Tweet entity
      */
     @Override
-    public Tweet findById(String s) {
-        return null;
+    public Tweet findById(String s) throws URISyntaxException {
+        //Construct URI
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(API_BASE_URI)
+                .append(USER_PATH)
+                .append(QUERY_SYM)
+                .append("status=")
+                .append(s);
+
+        URI uri = new URI(sb.toString());
+
+        // Execute HTTP Request
+        HttpResponse response = httpHelper.httpGet(uri);
+
+        //Validate response and deser response to Tweet object
+        return parseResponseBody(response, HTTP_OK);
     }
 
     /**
@@ -109,8 +125,23 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @return deleted entity
      */
     @Override
-    public Tweet deleteById(String s) {
-        return null;
+    public Tweet deleteById(String s) throws URISyntaxException {
+        //Construct URI
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(API_BASE_URI)
+                .append(DELETE_PATH)
+                .append(QUERY_SYM)
+                .append(s)
+                .append(".json");
+
+        URI uri = new URI(sb.toString());
+
+        // Execute HTTP Request
+        HttpResponse response = httpHelper.httpGet(uri);
+
+        //Validate response and deser response to Tweet object
+        return parseResponseBody(response, HTTP_OK);
     }
 
     /**
