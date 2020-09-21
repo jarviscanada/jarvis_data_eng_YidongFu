@@ -4,9 +4,7 @@ public class Hashtag {
     private int[] indices;
     private String text;
 
-    public int[] getIndices() {
-        return indices;
-    }
+    public int[] getIndices() { return indices; }
 
     public void setIndices(int[] indices) {
         this.indices = indices;

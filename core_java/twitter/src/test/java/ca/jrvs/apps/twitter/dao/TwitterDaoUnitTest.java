@@ -26,8 +26,8 @@ public class TwitterDaoUnitTest {
     @Test
     public void showTweet() throws Exception {
         //test failed request
-        String hashTag = "#abc";
-        String text = "@someone sometext " + hashTag + " " + System.currentTimeMillis();
+        //String hashTag = "#abc";
+        String text = "@someone sometext " + System.currentTimeMillis();
         Double lat = 1d;
         Double lon = -1d;
         //exception is expected here
@@ -58,7 +58,7 @@ public class TwitterDaoUnitTest {
 
         when(mockHelper.httpPost(isNotNull())).thenReturn(null);
         TwitterDao spyDao = Mockito.spy(dao);
-        Tweet expectedTweet = JsonParser.toObjectFromJson(tweetJsonStr, Tweet.class);
+        Tweet expectedTweet = JsonUtil.toObjectFromJson(tweetJsonStr, Tweet.class);
         //mock parseResponseBody
         doReturn(expectedTweet).when(spyDao).parseResponseBody(any(), anyInt());
         Tweet tweet = spyDao.create(TweetUtil.buildTweet(text, lon, lat));

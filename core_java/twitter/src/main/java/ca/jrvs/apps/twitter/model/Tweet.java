@@ -16,7 +16,7 @@ public class Tweet {
     private String text;
     @JsonProperty ("entites")
     private Entities entities;
-    @JsonProperty
+    @JsonProperty("coordinates")
     private Coordinates coordinates;
     @JsonProperty ("retweet_count")
     private Long retweetCount;

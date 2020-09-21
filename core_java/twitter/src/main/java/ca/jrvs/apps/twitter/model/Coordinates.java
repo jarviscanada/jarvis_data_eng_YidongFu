@@ -11,9 +11,7 @@ public class Coordinates {
         return coordinates;
     }
 
-    public void setCoordinates(ArrayList<Double> coordinates) {
-        this.coordinates = coordinates;
-    }
+    public void setCoordinates(ArrayList<Double> coordinates) { this.coordinates = coordinates; }
 
     public String getType() {
         return type;

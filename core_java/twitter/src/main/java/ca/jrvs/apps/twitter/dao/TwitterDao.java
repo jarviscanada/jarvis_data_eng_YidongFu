@@ -55,7 +55,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         // Execute HTTP Request
         HttpResponse response = httpHelper.httpPost(uri);
 
-        //Validate response and deser response to Tweet object
+        //Validate response and deserialize response to Tweet object
         return parseResponseBody(response, HTTP_OK);
     }
 
@@ -84,12 +84,13 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         return new URI(sb.toString());
     }
 
-    private void appendQueryParam(StringBuilder sb, String status, String encode, boolean firstParam) {
-        if (firstParam == true) {
-            sb.append(status).append(encode);
-        } else {
-            sb.append(status).append(encode);
+    private void appendQueryParam(StringBuilder sb, String key, String value, boolean firstParam) {
+        if (!firstParam) {
+            sb.append(AMPERSAND);
         }
+        sb.append(key)
+                .append(EQUAL)
+                .append(value);
     }
 
     /**
@@ -98,15 +99,16 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @param s entity id
      * @return Tweet entity
      */
+
     @Override
     public Tweet findById(String s) throws URISyntaxException {
         //Construct URI
 
         StringBuilder sb = new StringBuilder();
         sb.append(API_BASE_URI)
-                .append(USER_PATH)
+                .append(SHOW_PATH)
                 .append(QUERY_SYM)
-                .append("status=")
+                .append("id=")
                 .append(s);
 
         URI uri = new URI(sb.toString());
@@ -131,14 +133,13 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         StringBuilder sb = new StringBuilder();
         sb.append(API_BASE_URI)
                 .append(DELETE_PATH)
-                .append(QUERY_SYM)
                 .append(s)
                 .append(".json");
 
         URI uri = new URI(sb.toString());
 
         // Execute HTTP Request
-        HttpResponse response = httpHelper.httpGet(uri);
+        HttpResponse response = httpHelper.httpPost(uri);
 
         //Validate response and deser response to Tweet object
         return parseResponseBody(response, HTTP_OK);
@@ -175,7 +176,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
         // Deser JSON string to Tweet object
         try {
-            tweet = JsonParser.toObjectFromJson(jsonStr, Tweet.class);
+            tweet = JsonUtil.toObjectFromJson(jsonStr, Tweet.class);
         }catch (IOException e) {
             throw new RuntimeException("Unable to convert jSON str to Object", e);
         }
