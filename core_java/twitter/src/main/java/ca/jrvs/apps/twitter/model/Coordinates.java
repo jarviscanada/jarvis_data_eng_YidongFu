@@ -1,6 +1,5 @@
 package ca.jrvs.apps.twitter.model;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Coordinates {

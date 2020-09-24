@@ -1,8 +1,8 @@
 package ca.jrvs.apps.twitter.dao;
 
-import java.net.URI;
 import org.apache.http.HttpResponse;
-import org.apache.http.entity.StringEntity;
+
+import java.net.URI;
 
 public interface HttpHelper {
 

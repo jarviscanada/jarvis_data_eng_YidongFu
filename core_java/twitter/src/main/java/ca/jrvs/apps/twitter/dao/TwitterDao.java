@@ -1,8 +1,6 @@
 package ca.jrvs.apps.twitter.dao;
 
-import ca.jrvs.apps.twitter.example.dto.JsonParser;
 import ca.jrvs.apps.twitter.model.Tweet;
-
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;

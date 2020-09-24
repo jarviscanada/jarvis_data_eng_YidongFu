@@ -2,9 +2,6 @@ package ca.jrvs.apps.twitter.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.sql.Timestamp;
-import java.util.List;
-
 public class Tweet {
     @JsonProperty ("created_at")
     private String createdAt;

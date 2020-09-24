@@ -1,13 +1,12 @@
 package ca.jrvs.apps.twitter.dao;
 
 import ca.jrvs.apps.twitter.model.Tweet;
-import net.minidev.json.JSONUtil;
-import org.apache.http.HttpResponse;
 import org.junit.Before;
 import org.junit.Test;
-import sun.awt.HKSCS;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 
 public class TwitterDaoIntTest {
 
@@ -60,9 +59,11 @@ public class TwitterDaoIntTest {
 
     @Test
     public void deleteById() throws Exception{
-        Long id = 1308112305268436993L;
+        Long id = 1308452127627513857L;
         String id_str = Long.toString(id);
 
-        dao.deleteById(id_str);
+        Tweet tweet = dao.deleteById(id_str);
+
+        assertEquals(id, tweet.getId());
     }
 }
