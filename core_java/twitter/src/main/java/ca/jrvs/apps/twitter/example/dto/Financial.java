@@ -1,6 +1,7 @@
 package ca.jrvs.apps.twitter.example.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.math.BigInteger;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
