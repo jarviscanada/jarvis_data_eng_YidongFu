@@ -2,16 +2,20 @@ package ca.jrvs.apps.twitter.dao;
 
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+@org.springframework.stereotype.Service
+
 public class TwitterService implements Service {
 
     private CrdDao dao;
 
+    @Autowired
     public TwitterService(CrdDao dao) {
         this.dao = dao;
     }
@@ -58,9 +62,13 @@ public class TwitterService implements Service {
     }
 
     private void validateId(String id) {
-        //if (id.length() != 19) {
-            //throw new IllegalArgumentException("ID is not valid");
-        //}
+        for (char c : id.toCharArray())
+        {
+            if (!Character.isDigit(c)) {
+                throw new IllegalArgumentException("Invalid ID");
+            }
+        }
+
     }
 
     public static int countWords(String text) {

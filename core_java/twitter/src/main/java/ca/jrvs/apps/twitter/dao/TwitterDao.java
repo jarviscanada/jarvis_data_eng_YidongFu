@@ -1,9 +1,11 @@
 package ca.jrvs.apps.twitter.dao;
 
 import ca.jrvs.apps.twitter.model.Tweet;
+import ca.jrvs.apps.twitter.util.JsonUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -12,6 +14,7 @@ import java.net.URISyntaxException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
+@Repository
 
 public class TwitterDao implements CrdDao<Tweet, String> {
 

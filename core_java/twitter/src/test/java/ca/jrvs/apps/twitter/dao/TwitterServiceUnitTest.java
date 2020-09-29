@@ -1,6 +1,7 @@
 package ca.jrvs.apps.twitter.dao;
 
 import ca.jrvs.apps.twitter.model.Tweet;
+import ca.jrvs.apps.twitter.util.TweetUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
