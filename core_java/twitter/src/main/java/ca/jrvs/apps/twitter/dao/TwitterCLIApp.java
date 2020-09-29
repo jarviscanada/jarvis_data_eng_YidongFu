@@ -3,29 +3,34 @@ package ca.jrvs.apps.twitter.dao;
 import ca.jrvs.apps.twitter.controller.Controller;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
+import ca.jrvs.apps.twitter.util.JsonUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 
+@Component
 public class TwitterCLIApp {
 
     public static final String USAGE = "USAGE: TwitterCLIApp post|show|delete [options]";
 
     private Controller controller;
 
+    @Autowired
     public TwitterCLIApp(Controller controller) {
         this.controller = controller;
     }
     public static void main(String[] args) throws IOException, URISyntaxException {
         //Get secrets from env vars
-        String CONSUMER_KEY = System.getenv("consumerKey");
-        String CONSUMER_SECRET = System.getenv("consumerSecret");
-        String ACCESS_TOKEN = System.getenv("accessToken");
-        String TOKEN_SECRET = System.getenv("tokenSecret");
+        String consumerKey = System.getenv("consumerKey");
+        String consumerSecret = System.getenv("consumerSecret");
+        String accessToken = System.getenv("accessToken");
+        String tokenSecret = System.getenv("tokenSecret");
 
         //Create components and chain dependencies
-        HttpHelper httpHelper = new TwitterHttpHelper(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, TOKEN_SECRET);
+        HttpHelper httpHelper = new TwitterHttpHelper();
         CrdDao dao = new TwitterDao(httpHelper);
         Service service = new TwitterService(dao);
         Controller controller = new TwitterController(service);
@@ -35,7 +40,7 @@ public class TwitterCLIApp {
         app.run(args);
     }
 
-    private void run(String[] args) throws IOException, URISyntaxException {
+    public void run(String[] args) throws IOException, URISyntaxException {
         if (args.length == 0) {
             throw new IllegalArgumentException(USAGE);
         }

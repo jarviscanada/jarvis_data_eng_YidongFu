@@ -1,4 +1,4 @@
-package ca.jrvs.apps.twitter.dao;
+package ca.jrvs.apps.twitter.util;
 
 import ca.jrvs.apps.twitter.model.Tweet;
 import com.fasterxml.jackson.core.JsonProcessingException;

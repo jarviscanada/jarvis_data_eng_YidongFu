@@ -3,15 +3,16 @@ package ca.jrvs.apps.twitter.dao;
 import ca.jrvs.apps.twitter.controller.Controller;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
 import java.util.List;
 
-import static ca.jrvs.apps.twitter.dao.TweetUtil.buildTweet;
+import static ca.jrvs.apps.twitter.util.TweetUtil.buildTweet;
 
+@org.springframework.stereotype.Controller
 public class TwitterController implements Controller {
 
     private static final String COORD_SEP = ":";
@@ -19,6 +20,7 @@ public class TwitterController implements Controller {
 
     private Service service;
 
+    @Autowired
     public TwitterController(Service service) {
         this.service = service;
     }
