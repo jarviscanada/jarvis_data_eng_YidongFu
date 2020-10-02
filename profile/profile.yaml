@@ -1,0 +1,101 @@
+name: "Yidong Fu"
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_YidongFu
+
+summary: My name is Yidong Fu and I recently graduated as a Master of Mechanical and Industrial Engineering student at University of Toronto. Ever since I had memories, I have been always interested in the latest technology in the world. That is the reason why I spent tremendous amount of time learning Maths and engineering so that I can adapt to any newest technology quickly. I truly believe that technology is the driving force of human society and I hope I can be part of that.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  proficient:
+    - Python
+    - TensorFlow
+    - PySpark
+    - Machine Learning Algorithms
+    - Data Analytics
+  competent:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+  familiar:
+    - Microsoft
+    - Financial Modelling
+    - Intellij
+    - AWS
+    - R
+
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    description: This Linux Cluster Monitor Agent is a tool for monitoring cluster resources such as CPU idle percentage, available disk, and so on. It helps the infrastructure team to monitor cluster resources usage so that they can allocate resources more reasonably.
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: implements a Java app which can post/show/delete Twitter post via Twitter REST API. Many concepts are implemented such as HTTP Client, Junit Test, Mockito, DAO, and Spring."
+      - "JDBC App: allows a connection between a Java application and an RDBMS. In addition, DAO and Repository design patterns as well as some advanced JDBC concepts are implemented."
+      - "Grep App: was developed which will search for a text pattern recursively in a given directory, and output matched lines to a file. Lamdda API and Stream API were introduced in this project to achieve more efficient coding and advanced functional programming."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Web app for resturant"
+    #URL is optional
+    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+  - name: "Machine Learning"
+    git_url:
+    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+
+#List of professional expereince
+#The job description allows hiring managers to understand your job and technologies you used(e.g. programing langauge, libraries, algorithms, hardwards, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2020-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+  - title: "Tutor"
+    company: "XYZ Company"
+    duration: "2019"
+    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+
+education:
+  - school_name: "University of Toronto"
+    duration: "2018-2020"
+    degree: "Master of Mechanical and Industrial Engineering"
+    department: "Mechanical and Industrial Engineering"
+    awards_achievements:
+  - school_name: "University of Toronto"
+    duration: "2014-2018"
+    degree: "Mathematics specialist in Finance & Statistic Major"
+    department: "Department of Arts and Science"
+    awards_achievements: 
+
+others:
+  - title: "Certificates"
+    bullets:
+      - " "
+  - title: "Awards"
+    bullets:
+      - " "
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Golf Player"
+      - "Piano/Singing"

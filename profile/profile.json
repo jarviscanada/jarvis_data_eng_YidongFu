@@ -1,0 +1,127 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Master of Mechanical and Industrial Engineering",
+      "department": "Mechanical and Industrial Engineering",
+      "duration": "2018-2020",
+      "school_name": "University of Toronto"
+    },
+    {
+      "awards_achievements": null,
+      "degree": "Mathematics specialist in Finance \u0026 Statistic Major",
+      "department": "Department of Arts and Science",
+      "duration": "2014-2018",
+      "school_name": "University of Toronto"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_YidongFu",
+  "highlighted_projects": [
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
+      "name": "Web app for resturant"
+    },
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": null,
+      "name": "Machine Learning"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "This Linux Cluster Monitor Agent is a tool for monitoring cluster resources such as CPU idle percentage, available disk, and so on. It helps the infrastructure team to monitor cluster resources usage so that they can allocate resources more reasonably.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: implements a Java app which can post/show/delete Twitter post via Twitter REST API. Many concepts are implemented such as HTTP Client, Junit Test, Mockito, DAO, and Spring.",
+        "JDBC App: allows a connection between a Java application and an RDBMS. In addition, DAO and Repository design patterns as well as some advanced JDBC concepts are implemented.",
+        "Grep App: was developed which will search for a text pattern recursively in a given directory, and output matched lines to a file. Lamdda API and Stream API were introduced in this project to achieve more efficient coding and advanced functional programming."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Yidong Fu",
+  "others": [
+    {
+      "bullets": [
+        " "
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        " "
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "Golf Player",
+        "Piano/Singing"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "duration": "2020-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "XYZ Company",
+      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "duration": "2019",
+      "title": "Tutor"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git"
+    ],
+    "familiar": [
+      "Microsoft",
+      "Financial Modelling",
+      "Intellij",
+      "AWS",
+      "R"
+    ],
+    "proficient": [
+      "Python",
+      "TensorFlow",
+      "PySpark",
+      "Machine Learning Algorithms",
+      "Data Analytics"
+    ]
+  },
+  "summary": "My name is Yidong Fu and I recently graduated as a Master of Mechanical and Industrial Engineering student at University of Toronto. Ever since I had memories, I have been always interested in the latest technology in the world. That is the reason why I spent tremendous amount of time learning Maths and engineering so that I can adapt to any newest technology quickly. I truly believe that technology is the driving force of human society and I hope I can be part of that."
+}
