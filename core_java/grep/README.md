@@ -13,7 +13,7 @@ Similar to
 egrep -r {regex} {rootPath} > {outFile}
 
 # Pseudocode
-
+```
 public void process() {
 
   matchedLines = []
@@ -24,6 +24,7 @@ public void process() {
 
   writeToFile(matchedLines)
 }
+```
 
 # Performance Issue
 

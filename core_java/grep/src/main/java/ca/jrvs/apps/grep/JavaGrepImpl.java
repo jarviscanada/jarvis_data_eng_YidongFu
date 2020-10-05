@@ -15,7 +15,7 @@ import java.util.List;
 
 public class JavaGrepImpl implements JavaGrep {
 
-    final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
+    final Logger logger = LoggerFactory.getLogger(JavaGrepImpl.class);
 
     private String regex;
     private String rootPath;
@@ -120,7 +120,7 @@ public class JavaGrepImpl implements JavaGrep {
         try {
             javaGrepImpl.process();
         } catch (Exception ex) {
-            javaGrepImpl.logger.error(ex.getMessage(), ex);
+            javaGrepImpl.logger.error("USAGE: JavaGrep regex rootPath outFile", ex);
         }
     }
 }

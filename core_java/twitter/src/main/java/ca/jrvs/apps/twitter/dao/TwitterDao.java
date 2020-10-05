@@ -34,6 +34,8 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
     private HttpHelper httpHelper;
 
+    final Logger logger = LoggerFactory.getLogger(TwitterDao.class);
+
     @Autowired
     public TwitterDao(HttpHelper httpHelper) {this.httpHelper = httpHelper;}
 
@@ -156,9 +158,9 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         int status = response.getStatusLine().getStatusCode();
         if (status != expectedStatusCode){
             try{
-                System.out.println(EntityUtils.toString(response.getEntity()));
+                TwitterDao.logger.error(EntityUtils.toString(response.getEntity()));
             } catch (IOException e) {
-                System.out.println("Response has no entity");
+                TwitterDao.logger.error("Response has no entity", e);
             }
             throw new RuntimeException("Unexpected HTTP status" + status);
         }
